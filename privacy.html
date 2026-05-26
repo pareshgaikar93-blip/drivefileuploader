@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Drive File Uploader</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0a0c14;--paper:#f5f3ee;--cream:#ede9e0;
+  --blue:#1a56f0;--stroke:#d4cfc4;
+  --font-display:'Syne',sans-serif;--font-body:'DM Sans',sans-serif;
+}
+body{font-family:var(--font-body);background:var(--paper);color:var(--ink);line-height:1.7}
+nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px 48px;border-bottom:1px solid var(--stroke);
+  background:var(--paper);
+}
+.nav-logo{
+  font-family:var(--font-display);font-weight:800;font-size:16px;
+  display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink);
+}
+.nav-logo span{background:var(--blue);color:#fff;padding:4px 8px;border-radius:6px;font-size:14px}
+.nav-back{font-size:14px;color:#666;text-decoration:none}
+.nav-back:hover{color:var(--ink)}
+
+.page-hero{
+  background:var(--cream);border-bottom:1px solid var(--stroke);
+  padding:64px 48px 48px;
+}
+.page-tag{
+  font-family:var(--font-display);font-size:11px;font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;color:var(--blue);margin-bottom:12px;
+}
+h1{font-family:var(--font-display);font-size:clamp(36px,5vw,56px);font-weight:800;letter-spacing:-2px;margin-bottom:12px}
+.last-updated{font-size:14px;color:#888}
+
+.content{max-width:740px;margin:0 auto;padding:60px 48px 80px}
+
+h2{
+  font-family:var(--font-display);font-size:22px;font-weight:700;
+  margin:40px 0 12px;padding-top:8px;
+  border-top:1px solid var(--stroke);
+}
+h2:first-child{border-top:none;margin-top:0}
+p{font-size:15px;color:#444;margin-bottom:16px;font-weight:300}
+ul{padding-left:20px;margin-bottom:16px}
+li{font-size:15px;color:#444;margin-bottom:8px;font-weight:300}
+strong{color:var(--ink);font-weight:500}
+a{color:var(--blue)}
+
+.highlight-box{
+  background:var(--cream);border:1px solid var(--stroke);
+  border-radius:12px;padding:20px 24px;margin:24px 0;
+}
+.highlight-box p{margin:0;font-size:14px}
+
+footer{
+  padding:28px 48px;border-top:1px solid var(--stroke);
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:13px;color:#888;flex-wrap:wrap;gap:12px;
+}
+footer a{color:#888;text-decoration:none}
+footer a:hover{color:var(--ink)}
+.footer-links{display:flex;gap:24px}
+
+@media(max-width:768px){
+  nav,.page-hero,.content,footer{padding-left:20px;padding-right:20px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html"><span>📂</span> Drive File Uploader</a>
+  <a class="nav-back" href="index.html">← Back to home</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-tag">Legal</div>
+  <h1>Privacy Policy</h1>
+  <p class="last-updated">Last updated: January 1, 2024</p>
+</div>
+
+<div class="content">
+
+  <div class="highlight-box">
+    <p><strong>Plain English summary:</strong> Drive File Uploader uploads files directly to <em>your own</em> Google Drive. We do not collect, store, or share your files, file names, or personal data. Your data stays in your Google account.</p>
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p>Drive File Uploader ("the Add-on", "we", "our") is a Google Sheets add-on that allows users to upload files from their local device to their own Google Drive account and insert shareable links into their Google Sheets.</p>
+  <p>For privacy questions, contact us at: <a href="mailto:support@example.com">support@example.com</a></p>
+
+  <h2>2. What data we access</h2>
+  <p>To function, the Add-on requests the following Google OAuth permissions:</p>
+  <ul>
+    <li><strong>Google Drive</strong> — to create files in your Drive and set sharing permissions on those files only.</li>
+    <li><strong>Google Sheets</strong> — to read the active cell address and write the Drive link into that cell.</li>
+    <li><strong>Script UI</strong> — to display the sidebar panel inside Google Sheets.</li>
+  </ul>
+  <p>We access only the minimum permissions required for the add-on to function.</p>
+
+  <h2>3. What data we do NOT collect</h2>
+  <ul>
+    <li>We do <strong>not</strong> store any files you upload.</li>
+    <li>We do <strong>not</strong> read the content of your uploaded files.</li>
+    <li>We do <strong>not</strong> collect your name, email address, or Google account information.</li>
+    <li>We do <strong>not</strong> use third-party analytics or tracking tools.</li>
+    <li>We do <strong>not</strong> sell or share your data with any third party.</li>
+  </ul>
+
+  <h2>4. Upload history storage</h2>
+  <p>The Add-on stores a lightweight upload history (file name, timestamp, and Drive link) using Google Apps Script's <strong>DocumentProperties</strong> service. This data is stored exclusively within your Google document and is never transmitted to any external server. You can delete this history at any time using the "Clear all" button in the sidebar.</p>
+
+  <h2>5. How your files are handled</h2>
+  <p>When you upload a file:</p>
+  <ul>
+    <li>The file is read locally in your browser and transmitted directly to Google's servers via the Apps Script runtime.</li>
+    <li>The file is saved into the Google Drive folder you select — which belongs to your Google account.</li>
+    <li>The Add-on sets the file's sharing to "Anyone with the link can view" so the link works when inserted into your sheet. You can change these permissions in Google Drive at any time.</li>
+    <li>We never receive, process, or store a copy of your file on any third-party server.</li>
+  </ul>
+
+  <h2>6. Google API Services</h2>
+  <p>Drive File Uploader's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>7. Children's privacy</h2>
+  <p>This Add-on is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
+
+  <h2>8. Changes to this policy</h2>
+  <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date. Continued use of the Add-on after changes constitutes acceptance of the updated policy.</p>
+
+  <h2>9. Contact</h2>
+  <p>If you have any questions about this Privacy Policy, please contact:<br>
+  📧 <a href="mailto:support@example.com">support@example.com</a></p>
+
+</div>
+
+<footer>
+  <div>© 2024 Drive File Uploader</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </div>
+</footer>
+
+</body>
+</html>
